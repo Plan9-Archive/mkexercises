@@ -1,0 +1,10 @@
+# The training wheels are off!
+# There are a couple existing files:
+# legend - a file with a couple lines of text.
+# song - a file with an unsorted list of words.
+# Write a mkfile that generates the following files:
+# sorted - take bar and sort it. Hint: use 'sort'
+# double - concatenate legend with itself. Hint: use 'cat'
+# complete - concatenate sorted and double. Print the resulting file.
+# Finish the process by running 'mk complete'.
+# Don't forgot to leave a blank newline at the end of the mkfile.

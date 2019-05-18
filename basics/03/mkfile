@@ -1,0 +1,28 @@
+# Now we're getting into the nitty-gritty stuff.
+# mk uses environment variables to change how it behaves.
+# Environment variables are just text strings,
+#  so they may be parsed in different ways.
+# They are defined using =
+
+PLANET=captain
+POWERS=earth water wind fire heart
+
+
+# It's tradition to have your variables be in all caps.
+# Variables can be used as targets, dependencies, and in recipes.
+
+$POWERS:
+	touch $POWERS
+
+$PLANET: $POWERS
+	cat $POWERS >$PLANET
+
+# Now, it's easy to rename and add files to be processed with the same recipe:
+# Just change the variables!
+# Your turn!
+# Add an environment variable named 'GOPLANET' and assign whatever you want to it!
+# Then, add a target that uses it, whatever you want it to depend on.
+
+
+
+# Onto the next exercise!

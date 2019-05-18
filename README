@@ -1,0 +1,47 @@
+This is a collection of exercises to interactively learn the mk build automation tool.
+Each example has:
+ * a mkfile with comments that needs editing to work correctly
+ * some example starting files
+ * a solution file named mksolution to compare your solution with
+
+I highly recommend reading the following before using these exercises.
+I will be basing my exercises on them.
+ * the mk man page
+ * /sys/doc/mk.ps
+ * /sys/doc/mkfiles.ps
+Read them even if you won't fully understand them!
+It will slowly make sense as your brain processes it.
+
+mk also requires significant knowledge of rc and various utilities.
+Be sure to look up the man pages of any utilities you don't recognize.
+
+Basic exercises for learning rc:
+basics/00 - Specifying Recipes
+basics/01 - Intro to Dependencies
+basics/02 - QUIZ: Targets, Recipes, and Dependencies
+basics/03 - Environment Variables
+basics/04 - Recipe Environment Variables
+basics/05 - Virtual Targets
+basics/06 - Style
+#basics/07 - QUIZ: Targeting Variables
+#basics/08 - Errors #0: Formatting and Newlines
+#basics/09 - Errors #1: Missing Recipes
+#basics/10 - Errors #2: Circular Dependencies
+#basics/11 - Errors #3: Backwards Dependencies
+#basics/12 - QUIZ: Fix the Errors
+#basics/13 - Includes and Variable Overrides
+#basics/14 - QUIZ: 
+#basics/15 - Review and Talk
+
+Intermediate exercises for becoming an expert:
+#inter/00 - Meta-Rules
+#inter/01 - Attributes
+#inter/01 - Self-Dependent Targets
+
+Advanced exercises for enjoyment and challenge:
+#adv/00
+
+Are the examples not clear enough? Send your feedback!
+Got to the end? Submit your own exercises and challenges!
+
+Amavect

@@ -1,0 +1,12 @@
+default:V:
+	echo 'If you execute mk without any target, this rule executes.'
+	echo 'mk chooses the first rule as the default target, whatever the name.'
+
+fake:V:
+	echo 'REAL FAKE TARGETS'
+
+real:
+	echo 'really real targets' >real
+
+combo:V: real fake default
+	echo 'Real and virtual targets are getting complex...'

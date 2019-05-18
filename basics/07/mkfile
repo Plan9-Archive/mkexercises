@@ -1,0 +1,9 @@
+# Training wheels are off!
+# 'rob' contains quotes by Rob Pike.
+# 'ken' contains quotes by Ken Thompson.
+# 'rsc' contains quotes by Russ Cox.
+# Run a spellchecker on rob and ken. Hint: use spell
+# Compare the lines between the spellchecks. Hint: use comm -12
+# Print the comparison. For rob and ken, there should be none.
+# Have it such that running 'mk' does all of this.
+# Replace 'ken' with 'rsc'. There should be common words now.

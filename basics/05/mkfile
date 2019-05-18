@@ -1,0 +1,17 @@
+# mk rules have to create a file with the same name as the target.
+# What if you don't want to create a file with the target name?
+# Virtual rules allow for convenience and convention with target names.
+# Since virtuals aren't real files with a timestamp, they are always out of date.
+# The dependencies are calculated as usual, but the recipe is always run.
+
+default:V:
+	echo 'If you execute mk without any target, this rule executes.'
+	echo 'mk chooses the first rule as the default target, whatever the name.'
+
+# Your turn!
+# Add whatever virtual rules you want. Make them print, make them create files.
+# Have one virtual rule that depends on a virtual target.
+# Have another virtual rule that depends on a real target.
+
+
+# Onto the next exercise!

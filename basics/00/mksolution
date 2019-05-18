@@ -1,0 +1,16 @@
+myfile:
+	echo 'I''m writing to a file!' >myfile
+
+myotherfile:
+	touch myotherfile
+
+file1 file2 file3:
+	echo 'my #1 file' >file1
+	echo 'my #2 file' >file2
+	echo 'my #3 file' >file3
+
+file4 file5 file6:
+	echo 'foo' >file4
+	echo 'bar' >>file4
+	echo 'fizzbuzz' >file5
+	echo 'hello world' >file6

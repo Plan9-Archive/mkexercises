@@ -1,0 +1,35 @@
+# mk is a build system, and in a build system, files depend on other files.
+# It does this by taking the target's dependencies to construct a graph.
+# Let's take an example.
+
+meow: kitty
+	cp kitty meow
+	echo 'adding some text' >>meow
+
+kitty:
+	echo 'first line' >kitty
+
+# Entering 'mk newfile' in the command shell will first generate 'original'.
+# Then, 'original' will then be used to create the newfile.
+# It is also possible to specify multiple dependencies, separated by spaces:
+
+purr: kitty meow
+	cat kitty meow >purr
+
+# Your turn!
+# Add a target named 'cats' that concatenates 'meow', 'kitty' and 'purr'.
+
+
+
+# Run 'mk cats'
+
+# Now, run 'mk cats' again. Why is 'cats' remade again?
+# 'cats' and the dependent files were made so quickly that they have the
+#  same time stamp. mk stays on the safe side and calls the targets out of date.
+# The only fix to this is to have finer-grained time stamps.
+# Calling 'mk cats' multiple times reaches a point that 'cats' isn't remade.
+# It is good practice to create mkfiles that are:
+# * time-independent - Don't depend on sub-second time to generate data.
+# * deterministic - Do the same thing with the same files.
+
+# Onto the next exercise!

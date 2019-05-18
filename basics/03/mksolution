@@ -1,0 +1,12 @@
+PLANET=captain
+POWERS=earth water wind fire heart
+GOPLANET=BYYOURPOWERSCOMBINEDIAMCAPTAINPLANET
+
+$POWERS:
+	touch $POWERS
+
+$PLANET: $POWERS
+	cat $POWERS >$PLANET
+
+$GOPLANET:
+	echo 'he''s a hero!' >$GOPLANET

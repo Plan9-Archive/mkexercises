@@ -1,0 +1,19 @@
+# Style is important for readability and organization.
+# The basic style is organized as follows:
+# * Environment variables
+# * Virtual targets
+# * Real targets
+
+# Your turn!
+# Add 2 environment variables. Tradition is all-caps.
+# Add a default virtual rule that depends on the target of real rule #1.
+# Add a rule that depends on real rule #2 and #3, using environment variables.
+# Add a second rule that targets the first environment variable.
+# Add a third rule that targets the other variable.
+# Remember to use $target and $prereq.
+# Remember to actually create the files of non-virtual rules.
+# run 'mk' to see the results!
+
+
+
+# Onto the next exercise!

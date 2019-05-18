@@ -1,0 +1,22 @@
+F1=rob
+F2=ken
+#F2=rsc
+
+default:V: compare
+	echo 'The common words not in the dictionary are:'
+	cat compare
+
+$F1.spell: $F1
+	spell $prereq >$target
+
+$F2.spell: $F2
+	spell $prereq >$target
+
+# Meta-rules can combine the recipes for $F1.spell and $F2.spell.
+# However, this has not been presented yet.
+# %.spell: %
+# 	spell $prereq >$target
+
+
+compare: $F1.spell $F2.spell
+	comm -12 $prereq >compare

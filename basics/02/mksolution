@@ -1,0 +1,9 @@
+sorted: song
+	sort <song >sorted
+
+double: legend
+	cat legend legend >double
+
+complete: sorted double
+	cat sorted double >complete
+	cat complete

@@ -1,0 +1,12 @@
+meow: kitty
+	cp $prereq $target
+	echo 'adding some text' >>$target
+
+kitty:
+	echo 'first line' >$target
+
+purr: kitty meow
+	cat $prereq >$target
+
+cats: purr kitty meow
+	cat $prereq >$target
