@@ -1,0 +1,29 @@
+# You can define environment variables in mk, but mk defines some as well.
+# The man page for mk has all of them listed.
+# The most important of them are $target, $prereq, and $stem.
+
+# $target is the target. If the rule had multiple targets, it will be
+#  all of the new targets that need to be remade.
+# $prereq is all of the prerequisites.
+# $stem will be explained later in meta-rules.
+
+# Let's bring back exercise 01 about cats.
+
+# Your turn!
+# I've replaced the first rule's recipe with $target and $prereq
+# You do the rest.
+
+meow: kitty
+	cp $prereq $target
+	echo 'adding some text' >>$target
+
+kitty:
+	echo 'first line' >kitty
+
+purr: kitty meow
+	cat kitty meow >purr
+
+cats: purr kitty meow
+	cat meow kitty purr >cats
+
+# Onto the next exercise!

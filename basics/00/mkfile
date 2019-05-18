@@ -1,0 +1,36 @@
+# Quick thing, lines that start with a # are comments and are thus ignored.
+
+# Welcome to mk!
+# mk allows you to specify a target file and then how to make it.
+# Here, I want to make a file named 'myfile', so I write like so:
+
+myfile:
+	echo 'I''m writing to a file!' >myfile
+
+# If the user on the command line typed in 'mk myfile', it make it!
+# It does this by executing the recipe in rc, the command line shell.
+# The recipe can be anything, even multiple lines, as long as rc can interpret it.
+# If the user typed in 'mk myfile' again, it would return the file is up to date
+#  and doesn't need to be made again.
+# Your turn! Specify a target file named 'myotherfile' and create it however you wish.
+
+
+
+# If you type in 'mk myotherfile', mk will detect that myotherfile is out of date
+#  and run the recipe you wrote to create it.
+
+# You can also specify multiple files as the targets for the same recipe.
+
+file1 file2 file3:
+	echo 'my #1 file' >file1
+	echo 'my #2 file' >file2
+	echo 'my #3 file' >file3
+
+# (Note that there is a better way to write this recipe using Environment Variables.)
+# (More on that in a later exercise.)
+
+# Your turn! Write a target and recipe for 'file4' 'file5' and 'file6'.
+
+
+
+# Onto the next exercise!

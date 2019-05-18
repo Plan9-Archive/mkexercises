@@ -1,0 +1,12 @@
+meow: kitty
+	cp kitty meow
+	echo 'adding some text' >>meow
+
+kitty:
+	echo 'first line' >kitty
+
+purr: kitty meow
+	cat kitty meow >purr
+
+cats: purr kitty meow
+	cat meow kitty purr >cats

@@ -1,0 +1,15 @@
+INGREDIENTS=lettuce carrots spinach 
+DRESSING=ranch italian thousand-island
+
+default:V: salad
+
+$DRESSING:
+	for(i in $target)
+		echo $i >$i
+
+$INGREDIENTS:
+	for(i in $target)
+		echo $i >$i
+
+salad: $DRESSING $INGREDIENTS
+	cat $prereq >salad
