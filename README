@@ -23,23 +23,23 @@ basics/03 - Environment Variables
 basics/04 - Recipe Environment Variables
 basics/05 - Virtual Targets
 basics/06 - Style
-#basics/07 - QUIZ: Targeting Variables
-#basics/08 - Errors #0: Formatting and Newlines
-#basics/09 - Errors #1: Missing Recipes
-#basics/10 - Errors #2: Circular Dependencies
-#basics/11 - Errors #3: Backwards Dependencies
-#basics/12 - QUIZ: Fix the Errors
-#basics/13 - Includes and Variable Overrides
-#basics/14 - QUIZ: 
-#basics/15 - Review and Talk
+basics/07 - QUIZ: Targeting Variables
+basics/08 - Errors #0: Formatting and Newlines
+basics/09 - Errors #1: Missing Recipes
+basics/10 - Errors #2: Circular Dependencies
+basics/11 - Errors #3: Backwards Dependencies
+basics/12 - QUIZ: Fix the Errors
+basics/13 - Includes and Variable Overrides
+basics/14 - QUIZ: 
+basics/15 - Review and Talk
 
 Intermediate exercises for becoming an expert:
-#inter/00 - Meta-Rules
-#inter/01 - Attributes
-#inter/01 - Self-Dependent Targets
+inter/00 - Meta-Rules
+inter/01 - Attributes
+inter/01 - Self-Dependent Targets
 
 Advanced exercises for enjoyment and challenge:
-#adv/00
+adv/00
 
 Are the examples not clear enough? Send your feedback!
 Got to the end? Submit your own exercises and challenges!
